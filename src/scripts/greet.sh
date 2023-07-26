@@ -5,5 +5,7 @@ TO=$(circleci env subst "${PARAM_TO}")
 # If for any reason the TO variable is not set, default to "World"
 echo "Hello ${TO:-World}!"
 
+
 sudo apt-get update && sudo apt-get install -y rsync
+
 curl "https://update.brisktest.com/brisk/latest/linux-amd64/brisk" -o brisk
