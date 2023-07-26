@@ -7,9 +7,14 @@ parameters:
     type: string
     default: "World"
     description: "Hello to whom?"
+  version:
+    type: string
+    default: "latest"
+    description: "The version of brisk to install"
 steps:
   - run:
       environment:
         PARAM_TO: <<parameters.to>>
+        PARAM_VERSION: <<parameters.version>>
       name: Install Brisk
       command: <<include(scripts/install.sh)>>
