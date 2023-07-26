@@ -12,5 +12,6 @@ sudo apt-get update && sudo apt-get install -y rsync
 
 curl "https://update.brisktest.com/brisk/latest/linux-amd64/brisk" -o brisk
 chmod +x brisk
+sudo mv brisk /usr/local/bin/brisk
 brisk version
 
