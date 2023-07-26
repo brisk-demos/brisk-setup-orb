@@ -1,7 +1,7 @@
 version: 2.1
 
 description: >
-  Sample orb description
+  This orb will setup your CircleCI environment to run Brisk tests. Brisk can be used from within CircleCI to take advantage of the speed offered by Brisk's parallelization and distributed testing and hot environments.
 # What will your orb allow users to accomplish?
 # Descriptions should be short, simple, and informative.
 
