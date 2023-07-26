@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 # This example uses envsubst to support variable substitution in the string parameter type.
 # https://circleci.com/docs/orbs-best-practices/#accepting-parameters-as-strings-or-environment-variables
 TO=$(circleci env subst "${PARAM_TO}")
@@ -7,3 +9,6 @@ echo "Hello ${TO:-World}!"
 
 sudo apt-get update && sudo apt-get install -y rsync
 curl "https://update.brisktest.com/brisk/latest/linux-amd64/brisk" -o brisk
+chmod +x brisk
+brisk version
+
