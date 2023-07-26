@@ -1,5 +1,5 @@
 description: >
-  Sample description
+  This job will install brisk into the PATH so it is available for subsequent jobs.
 # What will this job do?
 
 executor: default
