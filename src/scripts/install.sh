@@ -20,6 +20,8 @@ export BRISK_CI=true
 export BRISK_PROJECT_CONFIG_FILE=$CONFIG_FILE
 export BRISK_PROJECT_TOKEN=$PROJECT_TOKEN
 export BRISK_NO_TERM=true
+
+
 brisk version
 
 
